@@ -1,0 +1,4 @@
+After taking the input dataset the model will predict the data by applying the ML algorithms
+and provide the best result in the form of comparison between to predict the best accuracy to
+treat diabetes.The sklearn library is very versatile and handy and serves real-world purposes. It
+provides a wide range of ML algorithms and Models to detect diabetes effectively.
