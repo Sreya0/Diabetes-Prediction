@@ -1,0 +1,25 @@
+Features Needed: The training phase is completed. The dataset contains seven sixty eight
+instances and nine features. The dataset features are:
+● Total number of times pregnant
+● Glucose/sugar level
+● Diastolic Blood Pressure
+● Body Mass Index (BMI)
+
+● Skin fold thickness in mm
+● Insulin value in 2 hour
+● Hereditary factor- Pedigree function
+● Age of patient in years
+Percentage split option is provided for training and testing. Out of 768 instances 75 % is used
+for training and 25% is used for testing
+The model is trained for performing a variety of tasks using the training data set in machine
+learning. To train the model, specific features are pulled from the training set. Therefore, the
+prototype combines these structures. Single words or groups of words are selected from the
+tweets for sentiment analysis. The model will be able to learn something from the features if
+the training set is appropriately labeled. Therefore, such data is utilized to test the model and
+determine if it is reacting correctly or not.
+The input data is transformed via feature extraction to produce features. A distinguishing
+factor across the various kinds of input designs is the presence of attribute square measures.
+If the input data is too large for the algorithm to analyze, it will be assumed to be redundant
+as the repetition of pixels-based images is converted into a condensed collection of attributes.
+The selected job can be completed by using the extracted feature rather than the entire initial
+data set.
