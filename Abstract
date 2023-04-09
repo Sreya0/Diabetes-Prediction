@@ -1,0 +1,15 @@
+One of the most fatal diseases in the world is diabetes. It is also the creator of a
+number of different types of ailments, such as cardiac failure, blindness, urinary organ
+problems, etc. In this situation, the patient must go to a diagnostic facility to receive their
+reports following consultation. because they must commit both time and money each time.
+However, with the development of machine learning techniques, we now have the freedom to
+look for a solution to the current problem. We now have sophisticated systems that use
+information processing that can predict whether a patient has polygenic illness or
+not.Additionally, predicting the illness before it manifests is crucial for giving the patients
+care. With information withdrawal, it is possible to eliminate hidden information from a
+sizable collection of diabetes-related data. The objective of this investigation is to create a
+system that could more accurately estimate a patient's level of diabetic risk.
+Objectives
+1. Determine whether a person has diabetes or not
+2. To determine the most accurate classification method
+3. identify the most telling signs of diabetes.
