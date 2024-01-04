@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Diabetes Prediction</title>
+    <style>
+        body {
+            background: repeating-radial-gradient(aquamarine, aqua, darkcyan);
+            background-repeat: no-repeat;
+            background-size: 100% 206%;
+            font-family: Arial, sans-serif;
+        }
+        header {
+            text-align: center;
+            margin-top: 20px;
+        }
+        form {
+            max-width: 400px;
+            margin: 0 auto;
+        }
+        label {
+            display: block;
+            margin-bottom: 8px;
+        }
+        input {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 16px;
+            box-sizing: border-box;
+        }
+        #btn {
+            height: 30px;
+            border-radius: 5px;
+            text-align: center;
+            text-decoration: none;
+            border: none;
+            display: block;
+            font-size: 18px;
+            background-color: deepskyblue;
+            cursor: pointer;
+        }
+        #btn:hover {
+            background-color: lightskyblue;
+        }
+        hr {
+            border: 1px solid black;
+            margin-top: 30px;
+        }
+        main {
+            max-width: 600px;
+            margin: 20px auto;
+        }
+        footer {
+            text-align: center;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Diabetes Prediction Portal</h1>
+    </header>
+    <form action="/predict" method="post">
+        <label for="bmi">Enter BMI(Body Mass Index):</label><input type="text" name="bmi" id="bmi" placeholder="BMI(Body Mass Index)" required>
+        <label for="bp">Enter BP(Body Pressure):</label><input type="text" name="bp" id="bp" placeholder="BP(Blood Pressure)" required>
+        <label for="glucose">Enter Glucose Level:</label><input type="text" name="glucose" id="glucose" placeholder="Glucose" required>
+        <label for="insulin">Enter Insulin Level:</label><input type="text" name="insulin" id="insulin" placeholder="Insulin Level" required><br><br>
+        <center><input type="submit" value="Submit" id="btn"></center>
+    </form>
+    <main>
+        <p><b>Note: </b><i>Body Mass Index (BMI) is a measure of body fat based on height and weight. BMI applies to most adults 18-65 years.</i></p>
+    </main>
+    <footer>
+        <p><b>Important Notice: </b><i>For Educational purposes only.</i></p>
+    </footer>
+    {% if msg=="Success" %}
+    <hr/>
+    <center><h1>Your Result:</h1><strong><i>Positive!! You have diabetes</i></strong></center>
+    {% endif %}
+    {% if msg=="Unsuccess" %}
+    <hr/>
+    <center><h2>Your Result:</h2><strong><i>Negative!! You do not have diabetes<br>Probability of future diabetes: {{ prob }}&percnt;</i></strong></center><br>
+    {% endif %}
+</body>
+</html>
